@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knine hood - Dog Training & Supplies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .slider-image {
+            transition: opacity 1s ease-in-out;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 2rem;
+        }
+        .slider-image.active {
+            opacity: 1;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 2rem;
+        }
+    </style>
+</head>
+<body class="bg-[#2c1e19] text-gray-200">
+
+    <!-- Navigation Bar -->
+    <header class="bg-[#3a2f2b] shadow-md rounded-b-xl px-4 py-3 sm:px-6 lg:px-8">
+        <nav class="container mx-auto flex justify-between items-center flex-wrap">
+            <a href="index.html" class="flex items-center space-x-2 p-2">
+                <div class="h-8 w-8 bg-[#f1d8ab] rounded-full flex items-center justify-center text-[#2c1e19] font-bold text-lg">K9</div>
+                <span class="text-xl font-bold text-gray-100">Knine hood</span>
+            </a>
+            <div class="flex items-center space-x-4">
+                <a href="about.html" class="text-gray-400 hover:text-[#f1d8ab] transition-colors duration-300">About Us</a>
+                <a href="#services" class="text-gray-400 hover:text-[#f1d8ab] transition-colors duration-300">Services</a>
+                <a href="#gallery" class="text-gray-400 hover:text-[#f1d8ab] transition-colors duration-300">Gallery</a>
+                <a href="marketplace.html" class="text-gray-400 hover:text-[#f1d8ab] transition-colors duration-300">Marketplace</a>
+                <a href="contact.html" class="bg-[#f1d8ab] text-[#2c1e19] px-4 py-2 rounded-lg hover:bg-[#d4b58c] transition-colors duration-300 shadow-md">Book a Session</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Slider -->
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="bg-[#3a2f2b] rounded-3xl shadow-lg p-8 sm:p-12 lg:p-16 text-center relative overflow-hidden h-[500px]">
+            <div class="absolute inset-0">
+                <img src="https://placehold.co/1200x800/3a2f2b/f1d8ab?text=About+Us" alt="About Us" class="slider-image active" id="slide-1">
+                <img src="https://placehold.co/1200x800/3a2f2b/f1d8ab?text=Our+Services" alt="Our Services" class="slider-image" id="slide-2">
+                <img src="https://placehold.co/1200x800/3a2f2b/f1d8ab?text=Happy+Clients+Gallery" alt="Happy Clients Gallery" class="slider-image" id="slide-3">
+                <img src="https://placehold.co/1200x800/3a2f2b/f1d8ab?text=Shop+Our+Products" alt="Shop Our Products" class="slider-image" id="slide-4">
+            </div>
+
+            <div class="hero-overlay"></div>
+
+            <div class="relative z-10">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-4">
+                    Your Best Friend, Trained with Care
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto mb-8">
+                    Expert dog training, behavior modification, and quality custom products for every canine companion.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="contact.html" class="bg-[#f1d8ab] text-[#2c1e19] px-8 py-3 rounded-xl font-semibold shadow-xl hover:bg-[#d4b58c] transition-colors duration-300 w-full sm:w-auto text-lg">
+                        Book a Training Session
+                    </a>
+                    <a href="marketplace.html" class="bg-[#5c4a45] text-white px-8 py-3 rounded-xl font-semibold hover:bg-[#4b3c38] transition-colors duration-300 w-full sm:w-auto text-lg">
+                        Shop Custom Items
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Services Section (What We Do) -->
+    <section id="services" class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">What We Do</h2>
+            <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+                Our comprehensive services are designed to help you and your dog thrive.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service Card 1: Dog Training -->
+            <div class="bg-[#3a2f2b] rounded-2xl shadow-md p-8 text-center flex flex-col items-center">
+                <div class="bg-[#5c4a45] text-[#f1d8ab] rounded-full p-4 mb-4">
+                    <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.162 3.422a12.083 12.083 0 01-2.356 3.885m-1.288-4.228L2.924 7.575M12 14v6m-4.505-4.505L5.756 12.756m0 0l-2.924 2.924m1.968-4.26a12.094 12.094 0 005.151-3.155" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Dog Training</h3>
+                <p class="text-gray-400">
+                    From basic obedience to advanced skills, our programs are tailored for every dog's needs.
+                </p>
+            </div>
+
+            <!-- Service Card 2: Breeding & Grooming -->
+            <div class="bg-[#3a2f2b] rounded-2xl shadow-md p-8 text-center flex flex-col items-center">
+                <div class="bg-[#5c4a45] text-[#f1d8ab] rounded-full p-4 mb-4">
+                    <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Breeding & Grooming</h3>
+                <p class="text-gray-400">
+                    We offer responsible breeding services and professional grooming to keep your dog healthy and happy.
+                </p>
+            </div>
+
+            <!-- Service Card 3: Behaviour Modification -->
+            <div class="bg-[#3a2f2b] rounded-2xl shadow-md p-8 text-center flex flex-col items-center">
+                <div class="bg-[#5c4a45] text-[#f1d8ab] rounded-full p-4 mb-4">
+                    <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.018A8.955 8.955 0 0112 21.08a8.955 8.955 0 01-8.618-11.018A9.09 9.09 0 0112 3c3.966 0 7.375 2.162 9.218 5.482z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Behaviour Modification</h3>
+                <p class="text-gray-400">
+                    Our experts work with challenging behaviors, using compassionate methods to build new habits.
+                </p>
+            </div>
+            
+             <!-- Service Card 4: Socialization & Walks -->
+            <div class="bg-[#3a2f2b] rounded-2xl shadow-md p-8 text-center flex flex-col items-center">
+                <div class="bg-[#5c4a45] text-[#f1d8ab] rounded-full p-4 mb-4">
+                    <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Socialization & Walks</h3>
+                <p class="text-gray-400">
+                    Safe and structured walks and group socialization sessions to help your dog interact confidently.
+                </p>
+            </div>
+            
+             <!-- Service Card 5: Boarding -->
+            <div class="bg-[#3a2f2b] rounded-2xl shadow-md p-8 text-center flex flex-col items-center">
+                <div class="bg-[#5c4a45] text-[#f1d8ab] rounded-full p-4 mb-4">
+                    <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16v14m-10 0h16a2 2 0 002-2V6a2 2 0 00-2-2H9a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Boarding</h3>
+                <p class="text-gray-400">
+                    A safe and comfortable home-away-from-home for your dog while you're away.
+                </p>
+            </div>
+            
+             <!-- Service Card 6: Q & A's -->
+            <div class="bg-[#3a2f2b] rounded-2xl shadow-md p-8 text-center flex flex-col items-center">
+                <div class="bg-[#5c4a45] text-[#f1d8ab] rounded-full p-4 mb-4">
+                    <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.405-1.227 2.508-2.583 3.429m-6.425 2.573a.75.75 0 10-.66 1.32c-.525-.262-.962-.876-1.168-1.57a3.526 3.526 0 011.83-4.322c-.635-.357-1.353-.591-2.126-.64A4.148 4.148 0 003 10.5M18.75 12h.008v.008h-.008V12z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Q & A's</h3>
+                <p class="text-gray-400">
+                    We're here to answer all your questions about dog behavior, training, and care.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Our Happy Clients</h2>
+            <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+                See some of the amazing dogs and their progress.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <img src="https://placehold.co/600x400/3a2f2b/ffffff?text=Dog+1" alt="Happy dog in training" class="rounded-xl shadow-lg w-full h-auto object-cover">
+            <img src="https://placehold.co/600x400/3a2f2b/ffffff?text=Dog+2" alt="A well-behaved dog" class="rounded-xl shadow-lg w-full h-auto object-cover">
+            <img src="https://placehold.co/600x400/3a2f2b/ffffff?text=Dog+3" alt="Dog performing a trick" class="rounded-xl shadow-lg w-full h-auto object-cover">
+            <img src="https://placehold.co/600x400/3a2f2b/ffffff?text=Dog+4" alt="Dog walking on a leash" class="rounded-xl shadow-lg w-full h-auto object-cover">
+            <img src="https://placehold.co/600x400/3a2f2b/ffffff?text=Dog+5" alt="Puppy playing" class="rounded-xl shadow-lg w-full h-auto object-cover">
+            <img src="https://placehold.co/600x400/3a2f2b/ffffff?text=Dog+6" alt="Dog socializing" class="rounded-xl shadow-lg w-full h-auto object-cover">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#3a2f2b] text-gray-400 py-8 px-4 sm:px-6 lg:px-8 rounded-t-xl">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-4 md:space-y-0">
+            <div class="flex flex-col items-center md:items-start space-y-2">
+                <div class="flex items-center space-x-2">
+                    <div class="h-6 w-6 bg-[#f1d8ab] rounded-full"></div>
+                    <span>Knine hood &copy; 2024</span>
+                </div>
+                <div class="text-sm">
+                    <p>Email: info@kninehood.org</p>
+                    <p>Phone: +254 711 181943</p>
+                </div>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="hover:text-white transition-colors duration-300">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors duration-300">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const images = document.querySelectorAll('.slider-image');
+            let currentImage = 0;
+
+            function showImage(index) {
+                images[currentImage].classList.remove('active');
+                currentImage = (index + images.length) % images.length;
+                images[currentImage].classList.add('active');
+            }
+
+            // Initial call to set the first image
+            showImage(0);
+
+            // Change image every 5 seconds
+            setInterval(() => {
+                showImage(currentImage + 1);
+            }, 5000);
+        });
+    </script>
+
+</body>
+</html>

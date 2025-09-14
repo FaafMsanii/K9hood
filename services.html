@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Knine hood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .article-hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-[#2c1e19] text-gray-200">
+
+    <!-- Navigation Bar -->
+    <header class="bg-[#3a2f2b] shadow-md rounded-b-xl px-4 py-3 sm:px-6 lg:px-8">
+        <nav class="container mx-auto flex justify-between items-center flex-wrap">
+            <a href="index.html" class="flex items-center space-x-2 p-2">
+                <div class="h-8 w-8 bg-[#f1d8ab] rounded-full flex items-center justify-center text-[#2c1e19] font-bold text-lg">K9</div>
+                <span class="text-xl font-bold text-gray-100">Knine hood</span>
+            </a>
+            <div class="flex items-center space-x-4">
+                <a href="about.html" class="text-gray-400 hover:text-[#f1d8ab] transition-colors duration-300">About Us</a>
+                <a href="services.html" class="text-gray-400 hover:text-[#f1d8ab] transition-colors duration-300">Services</a>
+                <a href="gallery.html" class="text-gray-400 hover:text-[#f1d8ab] transition-colors duration-300">Gallery</a>
+                <a href="marketplace.html" class="text-gray-400 hover:text-[#f1d8ab] transition-colors duration-300">Marketplace</a>
+                <a href="contact.html" class="bg-[#f1d8ab] text-[#2c1e19] px-4 py-2 rounded-lg hover:bg-[#d4b58c] transition-colors duration-300 shadow-md">Book a Session</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Services Section -->
+    <section class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl sm:text-5xl font-bold text-white mb-4">Our Services</h1>
+            <p class="text-lg text-gray-400 max-w-3xl mx-auto">
+                We offer a wide range of services to help you build a strong and happy relationship with your dog.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+            <!-- Service Item: Dog Training -->
+            <div id="dog-training" class="bg-[#3a2f2b] rounded-2xl shadow-md p-8 flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-8 cursor-pointer hover:bg-[#4b3c38] transition-colors duration-300">
+                <div class="bg-[#5c4a45] text-[#f1d8ab] rounded-full p-4 flex-shrink-0">
+                    <svg class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.162 3.422a12.083 12.083 0 01-2.356 3.885m-1.288-4.228L2.924 7.575M12 14v6m-4.505-4.505L5.756 12.756m0 0l-2.924 2.924m1.968-4.26a12.094 12.094 0 005.151-3.155" />
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-2">Dog Training</h2>
+                    <p class="text-gray-400">
+                        Our expert trainers use positive reinforcement techniques to teach your dog essential commands and good manners. We offer one-on-one sessions and group classes for all ages and skill levels.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Service Item: Breeding & Grooming -->
+            <div id="breeding-grooming" class="bg-[#3a2f2b] rounded-2xl shadow-md p-8 flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-8 cursor-pointer hover:bg-[#4b3c38] transition-colors duration-300">
+                <div class="bg-[#5c4a45] text-[#f1d8ab] rounded-full p-4 flex-shrink-0">
+                    <svg class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-2">Breeding & Grooming</h2>
+                    <p class="text-gray-400">
+                        We are committed to responsible breeding practices, ensuring healthy and happy puppies. Our grooming services keep your dog looking and feeling their best.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Service Item: Behaviour Modification -->
+            <div id="behavior-modification" class="bg-[#3a2f2b] rounded-2xl shadow-md p-8 flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-8 cursor-pointer hover:bg-[#4b3c38] transition-colors duration-300">
+                <div class="bg-[#5c4a45] text-[#f1d8ab] rounded-full p-4 flex-shrink-0">
+                    <svg class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.018A8.955 8.955 0 0112 21.08a8.955 8.955 0 01-8.618-11.018A9.09 9.09 0 0112 3c3.966 0 7.375 2.162 9.218 5.482z" />
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-2">Behaviour Modification</h2>
+                    <p class="text-gray-400">
+                        Our specialists address common behavioral issues such as aggression, fear, and anxiety with patience and effective, lasting solutions.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Service Item: Socialization & Walks -->
+            <div id="socialization-walks" class="bg-[#3a2f2b] rounded-2xl shadow-md p-8 flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-8 cursor-pointer hover:bg-[#4b3c38] transition-colors duration-300">
+                <div class="bg-[#5c4a45] text-[#f1d8ab] rounded-full p-4 flex-shrink-0">
+                    <svg class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-2">Socialization & Walks</h2>
+                    <p class="text-gray-400">
+                        We provide safe and structured group walks and socialization classes to help your dog develop positive social skills and build confidence.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Service Item: Boarding -->
+            <div id="boarding" class="bg-[#3a2f2b] rounded-2xl shadow-md p-8 flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-8 cursor-pointer hover:bg-[#4b3c38] transition-colors duration-300">
+                <div class="bg-[#5c4a45] text-[#f1d8ab] rounded-full p-4 flex-shrink-0">
+                    <svg class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16v14m-10 0h16a2 2 0 002-2V6a2 2 0 00-2-2H9a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-2">Boarding</h2>
+                    <p class="text-gray-400">
+                        Our boarding services offer a comfortable, safe, and engaging environment for your dog while you're away, with plenty of playtime and attention.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Service Item: Q & A's -->
+            <div id="q-and-a" class="bg-[#3a2f2b] rounded-2xl shadow-md p-8 flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-8 cursor-pointer hover:bg-[#4b3c38] transition-colors duration-300">
+                <div class="bg-[#5c4a45] text-[#f1d8ab] rounded-full p-4 flex-shrink-0">
+                    <svg class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.405-1.227 2.508-2.583 3.429m-6.425 2.573a.75.75 0 10-.66 1.32c-.525-.262-.962-.876-1.168-1.57a3.526 3.526 0 011.83-4.322c-.635-.357-1.353-.591-2.126-.64A4.148 4.148 0 003 10.5M18.75 12h.008v.008h-.008V12z" />
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-2">Q & A's</h2>
+                    <p class="text-gray-400">
+                        Have questions about your dog's behavior or our methods? We're here to provide expert advice and guidance through dedicated Q&A sessions.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- Article Section -->
+        <div id="article-section" class="article-hidden mt-12 bg-[#3a2f2b] rounded-2xl shadow-md p-8">
+            <h2 id="article-title" class="text-3xl font-bold text-white mb-4"></h2>
+            <img id="article-image" src="" alt="" class="rounded-xl w-full h-auto object-cover mb-6">
+            <p id="article-content" class="text-gray-400 leading-relaxed"></p>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-[#3a2f2b] text-gray-400 py-8 px-4 sm:px-6 lg:px-8 rounded-t-xl">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-4 md:space-y-0">
+            <div class="flex flex-col items-center md:items-start space-y-2">
+                <div class="flex items-center space-x-2">
+                    <div class="h-6 w-6 bg-[#f1d8ab] rounded-full"></div>
+                    <span>Knine hood &copy; 2024</span>
+                </div>
+                <div class="text-sm">
+                    <p>Email: info@kninehood.org</p>
+                    <p>Phone: +254 711 181943</p>
+                </div>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="hover:text-white transition-colors duration-300">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors duration-300">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const articles = {
+                'dog-training': {
+                    title: 'The Art of Dog Training',
+                    content: 'Our comprehensive dog training program focuses on positive reinforcement to build a strong, trusting bond between you and your pet. We cover everything from basic commands like "sit" and "stay" to more advanced obedience skills. Our methods are gentle, effective, and tailored to your dog\'s unique personality and learning style. We offer various programs, including puppy training for a great start, and group classes for a social learning environment. We believe that a well-trained dog is a happy dog, and we are committed to helping you achieve your training goals.',
+                    image: 'https://placehold.co/800x600/3a2f2b/ffffff?text=Dog+Training'
+                },
+                'breeding-grooming': {
+                    title: 'Responsible Breeding & Professional Grooming',
+                    content: 'At Knine hood, we prioritize the health and well-being of our dogs. Our breeding program adheres to the highest standards, including careful genetic screening and a focus on temperament, to ensure we produce happy, healthy puppies. We believe in transparency and providing a loving environment for all our dogs. In addition to breeding, our professional grooming services are designed to keep your dog looking and feeling their best, with services ranging from baths and blowouts to professional trims and nail care, all in a calm and caring atmosphere.',
+                    image: 'https://placehold.co/800x600/3a2f2b/ffffff?text=Breeding+and+Grooming'
+                },
+                'behavior-modification': {
+                    title: 'Understanding and Correcting Behavior',
+                    content: 'Dealing with behavioral issues can be challenging and frustrating, but you don\'t have to do it alone. Our specialists address a range of issues, including aggression, separation anxiety, excessive barking, and fear-based behaviors. We begin with a thorough consultation to understand the root cause of the behavior, and then we create a customized, compassionate plan to help your dog overcome these challenges. Our goal is to build a confident, well-adjusted companion and restore peace to your home.',
+                    image: 'https://placehold.co/800x600/3a2f2b/ffffff?text=Behavior+Modification'
+                },
+                'socialization-walks': {
+                    title: 'Building Confidence Through Socialization',
+                    content: 'Proper socialization is crucial for a well-adjusted dog. Our structured walks and group socialization sessions provide a safe and controlled environment for your dog to interact with other canines and new people. This helps to improve their social skills, reduce fear and anxiety, and build confidence in a variety of situations. Our trainers supervise all interactions to ensure a positive experience for every dog, helping them become more comfortable and confident in the world.',
+                    image: 'https://placehold.co/800x600/3a2f2b/ffffff?text=Socialization+and+Walks'
+                },
+                'boarding': {
+                    title: 'A Safe Home Away From Home',
+                    content: 'When you need to travel, our boarding services provide a stress-free experience for your dog. They will be cared for in a secure and loving environment, with plenty of exercise, playtime, and one-on-one attention to make them feel comfortable and happy. Our facility includes spacious kennels and outdoor play areas, and our dedicated staff ensures that your dog\'s routine and dietary needs are met. You can rest assured knowing your best friend is in good hands.',
+                    image: 'https://placehold.co/800x600/3a2f2b/ffffff?text=Boarding+Services'
+                },
+                'q-and-a': {
+                    title: 'Expert Answers to Your Questions',
+                    content: 'We believe in empowering dog owners with knowledge. Our dedicated Q&A sessions are an opportunity for you to ask our trainers anything about dog care, health, and behavior. We cover a wide range of topics, from nutritional advice and common health issues to training tips and behavioral insights. Whether you have a quick question or want to dive deep into a specific topic, our experts are here to provide the support and guidance you need to be a confident dog owner.',
+                    image: 'https://placehold.co/800x600/3a2f2b/ffffff?text=Q+%26+A'
+                }
+            };
+
+            const articleSection = document.getElementById('article-section');
+            const articleTitle = document.getElementById('article-title');
+            const articleImage = document.getElementById('article-image');
+            const articleContent = document.getElementById('article-content');
+
+            document.querySelectorAll('[id]').forEach(card => {
+                if (articles.hasOwnProperty(card.id)) {
+                    card.addEventListener('click', () => {
+                        const articleId = card.id;
+                        const article = articles[articleId];
+                        articleTitle.textContent = article.title;
+                        articleImage.src = article.image;
+                        articleImage.alt = article.title;
+                        articleContent.textContent = article.content;
+                        articleSection.classList.remove('article-hidden');
+                        articleSection.scrollIntoView({ behavior: 'smooth' });
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
